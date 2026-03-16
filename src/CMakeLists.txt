@@ -11,3 +11,5 @@ target_include_directories(stratum_bin PRIVATE
 target_link_libraries(stratum_bin PRIVATE
     ${STRATUM_LIB}
 )
+
+target_compile_options(stratum_bin PRIVATE -Wall -Wextra -Wpedantic)
