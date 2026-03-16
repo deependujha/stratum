@@ -11,6 +11,13 @@ enable_testing()
 # Declare Options
 option(STRATUM_BUILD_TESTS "Build tests" OFF)
 
+# Set Variable names
+set(STRATUM_LIB stratum)
+set(STRATUM_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
+set(STRATUM_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
+set(STRATUM_LIB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib)
+set(STRATUM_TESTS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/tests)
+
 # utility functions
 
 function (build_tests)
