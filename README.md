@@ -1,3 +1,3 @@
-# Stratum
+# stratum
 
 ![animated stratum](assets/stratum_animated_banner.svg)
