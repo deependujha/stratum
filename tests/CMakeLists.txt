@@ -19,6 +19,11 @@ if(STRATUM_BUILD_TESTS)
     set(STRATUM_TEST_TARGET stratum_tests)
     add_executable(${STRATUM_TEST_TARGET} ${STRATUM_TEST_SOURCES})
 
+    # Configure include directories for test files (enables IntelliSense)
+    target_include_directories(${STRATUM_TEST_TARGET} PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/../include
+    )
+
     # Link against GoogleTest main library and the Stratum library
     target_link_libraries(${STRATUM_TEST_TARGET} PRIVATE GTest::gtest_main ${STRATUM_LIB})
 
