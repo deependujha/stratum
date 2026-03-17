@@ -22,6 +22,7 @@ if(STRATUM_BUILD_TESTS)
     # Configure include directories for test files (enables IntelliSense)
     target_include_directories(${STRATUM_TEST_TARGET} PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/../include
+        ${GTEST_INCLUDE_DIRS}
     )
 
     # Link against GoogleTest main library and the Stratum library
